@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    background-color: black;
+}
+
+#div_books {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: black;
+    justify-content: center;
+
+}
+
+.div_titile {
+    justify-content: center;
+    /* width: 90vw; */
+    display: flex;
+    margin: 20px;
+}
+
+#img_book {
+    width: 50vw;
+
+}
+
+@media screen and (max-width: 450px) {
+
+    #img_book {
+        display: none;
+    }
+
+    #img_navbar {
+        display: none;
+    }
+
+
+
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    margin: 20px;
+}

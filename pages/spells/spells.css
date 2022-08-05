@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+    background-image: url("https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/03/harry-potter-Cropped(1).jpg?q=50&fit=contain&w=1500&h=&dpr=1.5");
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-style: italic;
+    margin: 20px;
+    font-size: 5vw;
+}
+@media screen and (max-width: 450px) {
+
+   #img_navbar{
+    display: none;
+   }
+
+}
