@@ -1,29 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     display: flex;
     margin: auto;
     margin-top: 20px;
 }
-p{
+
+p {
     justify-content: center;
     display: flex;
     width: 50vw;
     margin: auto;
     margin-top: 10px;
+    box-shadow: 0px 0px 25px rgb(207, 207, 207);
+    background: rgba(255, 255, 255, 0.3);
+
 }
+
 @media screen and (max-width: 450px) {
 
-    #img_navbar{
-     display: none;
+    #img_navbar {
+        display: none;
     }
- 
- }
- section {
-    background-color: red;
-padding: 10px;
- }
+
+}
+
+section {
+    background-color: rgb(8, 8, 8);
+    padding: 20px;
+}
