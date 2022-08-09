@@ -36,11 +36,10 @@ async function dataBooks() {
         
                      <img  src="${photoForCard()}" style="height:50%" class="card-img-top" alt="...">
                     <h5 class="card-title" > ${element["title"]}</h5>
-                    <p class="card-text">${element["author"]}</p>
-                   
-                    <p  id="p_rweviow" class=" card-text" >${element["description"]}</p>
-
-                    
+                    <p class="card-text">${element["author"]}  
+                    <button type="button" class="btnshow bg-danger" >&#10146;</button>
+                    </p>
+                    <p  id="p_rweviow" class="discri card-text d-none" >${element["description"]}</p>
                     <button type="button" class="btn btn-primary" onclick="paymaymnt()">Buy</button>
                     
                    </div>
@@ -51,8 +50,23 @@ async function dataBooks() {
     } catch (error) {
         alert(error)
     }
+    showdescription()
 }
 dataBooks()
+
+
+function showdescription(){
+
+  document.querySelectorAll(".btnshow").forEach((btn,i)=>{
+btn.addEventListener("click",()=>{
+
+  document.querySelectorAll(".discri")[i].classList.toggle("d-block")
+  document.querySelectorAll(".discri")[i].classList.toggle("d-none")
+
+})
+  })
+
+}
 
 
 function paymaymnt() {
