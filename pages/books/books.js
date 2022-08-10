@@ -4,15 +4,15 @@ const api_Books = (`https://fedeperin-harry-potter-api-en.herokuapp.com/books`);
 let counter = 0;
 function photoForCard() {
     let array = [
-        "/images/book1.webp",
-        "/images/book2.webp",
-        "/images/book3.webp",
-        " /images/book4.webp",
-        "/images/book5.webp",
-        "/images/book6.webp",
-        "/images/book7.webp",
-        "/images/book8.webp",
-        "/images/book9.webp",
+        "../../images/book1.webp",
+        "../../images/book2.webp",
+        "../../images/book3.webp",
+        " ../../images/book4.webp",
+        "../../images/book5.webp",
+        "../../images/book6.webp",
+        "../../images/book7.webp",
+        "../../images/book8.webp",
+        "../../images/book9.webp",
     ];
     let pic = array[counter];
     counter++;
@@ -34,7 +34,7 @@ async function dataBooks() {
                 <div class=" container-fluid my-1 mx-5  text-danger" style="width: 18rem;">
                   <div class="card-body">
         
-                     <img  src="${photoForCard()}" style="height:50%" class="card-img-top" alt="...">
+                     <img  src=${photoForCard()} style="height:50%" class="card-img-top" alt="...">
                     <h5 class="card-title" > ${element["title"]}</h5>
                     <p class="card-text">${element["author"]}  
                     <button type="button" class="btnshow bg-danger" >&#10146;</button>
